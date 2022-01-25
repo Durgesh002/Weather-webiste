@@ -9,7 +9,7 @@ app = Flask(__name__)
 base_dir = os.path.abspath(os.path.dirname(__file__))
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(base_dir, 'app.db')
-app.config['SECRET_KEY'] = 'itisasecretkey'
+app.config['SECRET_KEY'] = "place your secret key here" 
 
 db = SQLAlchemy(app)
 
